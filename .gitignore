@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+/src/main/resources/db/templateDB.lck
+/src/main/resources/db/templateDB.log
+/src/main/resources/db/templateDB.properties

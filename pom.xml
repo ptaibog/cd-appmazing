@@ -74,7 +74,7 @@
 									<target>
 										<available file = "${hsqldatabase.path}/templateDB.script" property = "database.exist"/>
 										<echo message = "${hsqldatabase.path}/templateDB.script"/>
-										<copy tofile = "${hsqldatabase.path}/templateDB.script" file = "{hsqldatabase.path}/templateDB.txt"/>
+										<copy tofile = "${hsqldatabase.path}/templateDB.script" file = "${hsqldatabase.path}/templateDB.txt"/>
 									</target>
 								</configuration>
 							</execution>
