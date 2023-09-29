@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ICategoryService {
 
-    CategoryDTO queryCategories (CategoryDTO category);
+    CategoryDTO queryCategory (CategoryDTO category);
 
     List<CategoryDTO> queryAllCategories();
 
