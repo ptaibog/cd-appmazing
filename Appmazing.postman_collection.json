@@ -337,7 +337,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 14\r\n}",
+							"raw": "{\r\n    \"id\": 15\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -352,6 +352,160 @@
 							"port": "30030",
 							"path": [
 								"contacts",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Test Category -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/categories",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category -R",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/categories/get",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"categories",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category All -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/categories/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"categories",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Add -C",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Cuidado del hogar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/categories/add",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"categories",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category -U",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"name\": \"Cuidado personal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/categories/update",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"categories",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category -D",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/categories/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"categories",
 								"delete"
 							]
 						}
