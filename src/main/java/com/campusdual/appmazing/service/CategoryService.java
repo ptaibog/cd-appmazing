@@ -19,7 +19,7 @@ public class CategoryService implements ICategoryService {
     private CategoryDao categoryDao;
 
     @Override
-    public CategoryDTO queryCategories(CategoryDTO categoryDTO) {
+    public CategoryDTO queryCategory(CategoryDTO categoryDTO) {
         Category category = CategoryMapper.INSTANCE.toEntity(categoryDTO);
         return CategoryMapper.INSTANCE.toDTO(this.categoryDao.getReferenceById(category.getId()));
     }
