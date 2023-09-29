@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Table(name = "CATEGORIES")
 public class Category {
 
-    @Id // indica esta es la clave primaria
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Column

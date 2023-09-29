@@ -1,8 +1,6 @@
 package com.campusdual.appmazing.model;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
-import java.util.Date;
 
 @Entity //es un elemento persistible, que va a estar en una bbdd
 @Table(name = "CONTACTS") //la tabla de la que va a provenir este objeto
