@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "2b2f2266-4e83-4504-b4fb-2032c30ab4bc",
+		"name": "Appmazing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30114032"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Test Controller -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/products",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Controller -R",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Pablo",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Controller Method -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/products/testMethod",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"testMethod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product -R",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products/get",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product All -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/products/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Add -C",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Olive oil\",\r\n    \"stock\": 125,\r\n    \"price\": 30.45,\r\n    \"active\": true,\r\n    \"date_added\": \"2022-01-01T23:00:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products/add",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product -U",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 8,\r\n        \"name\": \"Olive oil\",\r\n        \"stock\": 115,\r\n        \"price\": 14.45,\r\n        \"active\": true,\r\n        \"date_added\": \"2022-01-01T23:00:00.000+00:00\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products/update",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product -D",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Test Controller -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/contacts",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact -R",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/contacts/get",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contacts",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact All -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/contacts/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contacts",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact Add -C",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jose Luis\",\r\n    \"firstsurname\": \"Rubio\",\r\n    \"secondsurname\": \"Moreno\",\r\n    \"phonenumber\": 672590849,\r\n    \"mail\": \"morenorubialesjl@gmail.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/contacts/add",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contacts",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact -U",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Juan\",\r\n    \"firstsurname\": \"Etxebarria\",\r\n    \"secondsurname\": \"García\",\r\n    \"phonenumber\": 699999799,\r\n    \"mail\": \"juanetxgarcia@gmail.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/contacts/update",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contacts",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact -D",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 14\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/contacts/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contacts",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
