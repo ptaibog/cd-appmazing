@@ -22,7 +22,7 @@ public class Product {
     @Column
     private Date date_added;
     @ManyToOne
-    @JoinColumn(name = "category")
+    @JoinColumn(name = "category_id")
     private Category category_id;
 
     public int getId() {
