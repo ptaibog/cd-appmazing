@@ -72,5 +72,6 @@ public class ProductDTO {
     public void setCategory_id(CategoryDTO category_id) {
         this.category_id = category_id;
     }
+
 }
 

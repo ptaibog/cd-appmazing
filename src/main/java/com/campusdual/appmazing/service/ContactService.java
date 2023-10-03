@@ -1,10 +1,15 @@
 package com.campusdual.appmazing.service;
 
 import com.campusdual.appmazing.api.IContactService;
+import com.campusdual.appmazing.api.IProductService;
 import com.campusdual.appmazing.model.Contact;
+import com.campusdual.appmazing.model.Product;
 import com.campusdual.appmazing.model.dao.ContactDao;
+import com.campusdual.appmazing.model.dao.ProductDao;
 import com.campusdual.appmazing.model.dto.ContactDTO;
+import com.campusdual.appmazing.model.dto.ProductDTO;
 import com.campusdual.appmazing.model.dto.dtomapper.ContactMapper;
+import com.campusdual.appmazing.model.dto.dtomapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
@@ -17,6 +22,10 @@ public class ContactService implements IContactService {
 
     @Autowired
     private ContactDao contactDao;
+    @Autowired
+    private IProductService productService;
+    @Autowired
+    private ProductDao productDao;
 
     @Override
     public ContactDTO queryContact(ContactDTO contactDTO) {
@@ -48,4 +57,6 @@ public class ContactService implements IContactService {
         this.contactDao.delete(contact);
         return id;
     }
+
+
 }

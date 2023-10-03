@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Service("ProductService")
@@ -54,5 +55,25 @@ public class ProductService implements IProductService {
         Product product = ProductMapper.INSTANCE.toEntity(productDTO);
         this.productDao.delete(product);
         return id;
+    }
+
+    @Override
+    public int buyProduct(ProductDTO product, int quantity) {
+        ProductDTO productToBuy = this.queryProduct(product);
+        if(productToBuy.getActive() && quantity <= productToBuy.getStock()){
+            productToBuy.setStock(productToBuy.getStock() - quantity);
+            this.updateProduct(productToBuy);
+
+        }return productToBuy.getStock();
+    }
+
+    // calculateTotalBuyAndDecreaseStock()
+    // que el elemento llame a buyProduct
+    @Override
+    public BigDecimal calculateTotalPriceAndDecreaseStock(ProductDTO productDTO, int quantity){
+        ProductDTO dtoToBuy = this.queryProduct(productDTO);
+        BigDecimal totalPrice = dtoToBuy.getPrice().multiply(BigDecimal.valueOf(quantity));
+
+        return totalPrice;
     }
 }
